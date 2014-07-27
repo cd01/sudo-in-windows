@@ -9,13 +9,16 @@ namespace sudo
     {
         static void Main(string[] args)
         {
-            var startInfo = new System.Diagnostics.ProcessStartInfo();
-            startInfo.FileName = args[0]; 
-            startInfo.UseShellExecute = true;
-            startInfo.Verb = "runas";
-            startInfo.Arguments = new Func<IEnumerable<string>, string>((argsInShell) => {
-                                      return string.Join(" ", argsInShell); 
-                                  })(args.Skip(1)); 
+            var startInfo = new System.Diagnostics.ProcessStartInfo()
+                            {
+                                FileName = args[0],
+                                UseShellExecute = true,
+                                Verb = "runas",
+                                Arguments = new Func<IEnumerable<string>, string>((argsInShell) =>
+                                            {
+                                                return string.Join(" ", argsInShell);
+                                            })(args.Skip(1))
+                            };
  
             try 
             { 
