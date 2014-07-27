@@ -5,13 +5,9 @@ elevate command (UAC)
 
 ## Instration
 
-### Download binary from CI (AppVeyor)
-
-AppVeyor > Latest build > Artifacts > FILE NAME
-
-### Build
-
-Execute build.bat
+1. Download sudo.zip from [AppVeyor](https://ci.appveyor.com/project/cd01/sudo-in-windows/build/artifacts)
+2. Extract sudo.zip
+3. Move sudo.exe directory in your PATH environment variable
 
 
 ## Usage
