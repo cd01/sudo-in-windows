@@ -1,0 +1,22 @@
+# sudo in windows [![Build status](https://ci.appveyor.com/api/projects/status/106gjy2xkstpld4b/branch/master)](https://ci.appveyor.com/project/cd01/sudo-in-windows/branch/master)
+
+elevate command (UAC)
+
+
+## Instration
+
+### Download binary from CI (AppVeyor)
+
+AppVeyor > Latest build > Artifacts > FILE NAME
+
+### Build
+
+Execute build.bat
+
+
+## Usage
+
+```
+sudo [command] ...
+```
+
