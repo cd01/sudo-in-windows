@@ -3,13 +3,14 @@
 #---------------------------------#
 
 # version format
-version: 0.0.0.1.{build}
+version: 0.0.1.{build}
 
 # branches to build
 branches:
   # whitelist
   only:
     - master
+    - dev
 
   # blacklist
   except:
@@ -33,9 +34,6 @@ clone_folder: c:\projects\sudo
 build_script:
   - cmd: build.bat
 
-# to disable automatic builds
-build: off
-
 
 #---------------------------------#
 # artifacts configuration #
@@ -43,5 +41,6 @@ build: off
 
 artifacts:
   - path: bin
-  - name: sudo-in-windows
-  - type: zip
+    name: sudo
+    type: zip
+

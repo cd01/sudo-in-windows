@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Reflection;
 
-[assembly: AssemblyVersion("0.0.0.1")]
+[assembly: AssemblyVersion("0.0.1.*")]
 [assembly: AssemblyCopyright("Copyright cd01 2014")]
 [assembly: AssemblyDescription("Elevate UAC")]
 class sudo
