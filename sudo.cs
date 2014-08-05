@@ -11,6 +11,13 @@ class sudo
 {
     static void Main(string[] args)
     {
+        if (args.Count() == 0)
+        {
+            Console.WriteLine("Usage:");
+            Console.WriteLine("    sudo [command] ...");
+            Environment.Exit(0);
+        }
+
         var startInfo = new System.Diagnostics.ProcessStartInfo()
                         {
                             FileName = args[0],
