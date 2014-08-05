@@ -29,15 +29,8 @@ class sudo
                                         })(args.Skip(1))
                         };
 
-        try 
-        { 
-            var proc = System.Diagnostics.Process.Start(startInfo);
-            proc.WaitForExit();
-        } 
-        catch(Exception ex) 
-        { 
-            Console.Error.WriteLine(ex.Message); 
-        } 
+        var proc = System.Diagnostics.Process.Start(startInfo);
+        proc.WaitForExit();
     }
 }
 
